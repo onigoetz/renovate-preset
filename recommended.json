@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "group:allNonMajor",
+    "schedule:weekends"
+  ],
+  "packageRules": [
+    {
+      "description": "Only update types in lockfiles, not package.json",
+      "groupName": "@types",
+      "packagePatterns": ["@types/*"],
+      "rangeStrategy": "update-lockfile"
+    },
+    {
+      "description": "Avoid packages that might have a security issue",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days"
+    }
+  ]
+}
