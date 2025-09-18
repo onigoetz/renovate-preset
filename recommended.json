@@ -17,5 +17,9 @@
       "matchDatasources": ["npm"],
       "minimumReleaseAge": "3 days"
     }
-  ]
+  ],
+  "major": {
+		"dependencyDashboardApproval": true
+	},
+	"postUpdateOptions": ["yarnDedupeHighest"]
 }
