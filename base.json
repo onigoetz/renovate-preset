@@ -15,7 +15,7 @@
     {
       "description": "Avoid packages that might have a security issue",
       "matchDatasources": ["npm"],
-      "minimumReleaseAge": "4 days"
+      "minimumReleaseAge": "3 days"
     }
   ],
   "major": {
