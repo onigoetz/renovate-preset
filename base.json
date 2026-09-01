@@ -15,6 +15,10 @@
       "internalChecksFilter": "strict"
     }
   ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
   "major": {
     "dependencyDashboardApproval": true
   },
